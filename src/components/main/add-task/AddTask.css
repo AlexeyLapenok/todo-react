@@ -1,0 +1,52 @@
+.add-container {
+    max-width: 759px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .add-container_task-form--input-label {
+    height: 16px;
+    width: 53px;
+    font-family: "Salesforce Sans";
+    font-size: 12px;
+    line-height: 15px;
+    color: #706E6B;
+  }
+  .add-container_task-form--input {
+    width: 99%;
+    height: 90px;
+    background: #FFFFFF;
+    border: 1px solid #DDDBDA;
+    border-radius: 4px;
+    margin-bottom: 11px;
+  }
+  .add-container_task-form--input:focus {
+    outline-color: #38B46C;
+  }
+  .add-container_task-form--input::-moz-focus-inner {
+    box-shadow: none;
+  }
+  .add-container_task-form--add {
+    display: block;
+    height: 36px;
+    width: 191px;
+    border-radius: 0px;
+    background: #2F80ED;
+    margin-left: auto;
+    color: #FFFFFF;
+    border: 2px solid #38B46C;
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+  }
+  .add-container_task-form--add:hover {
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    background: #388bf8;
+    cursor: pointer;
+  }
+  .add-container_task-form--add:active {
+    background: #296abe;
+  }
+  .add-container_task-form--add:focus {
+    outline-color: #38B46C;
+  }
+  

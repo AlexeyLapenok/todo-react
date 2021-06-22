@@ -1,0 +1,113 @@
+.list-container {
+    max-width: 763px;
+    margin: 0 auto;
+  }
+  .list-container_task-list {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .list-container_task-list li {
+    display: flex;
+    min-height: 109px;
+    max-width: 763px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 17px;
+    padding: 16px 12px 13px 23px;
+  }
+  .list-container_task-list li p {
+    display: block;
+    margin-top: 0;
+  }
+  .list-container_task-list li .is-done {
+    text-decoration: line-through;
+  }
+  .list-container_task-list li .is-important {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .list-container_task-list li .is-important::before {
+    display: inline-block;
+    padding-right: 0px;
+    content: "☆";
+    text-decoration: inherit;
+    width: 20px;
+  }
+  .list-container_task-list li:hover {
+    border: 0.5px solid rgba(47, 128, 237, 0.5);
+    box-shadow: 0px 10px 20px rgba(47, 128, 237, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .list-container_task-list li:hover .flex-container_button-important {
+    display: block;
+  }
+  .list-container_task-list li:hover .flex-container_button-delete {
+    display: block;
+  }
+  .list-container_task-list li .flex-container {
+    display: flex;
+    max-width: 220px;
+    margin-left: auto;
+  }
+  .list-container_task-list li .flex-container_button-important {
+    display: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 183px;
+    height: 37px;
+    border-radius: 58px;
+    border: 0;
+    background-color: #38B46C;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .list-container_task-list li .flex-container_button-important:hover {
+    box-shadow: 0px 10px 20px rgba(198, 201, 202, 0.5);
+    background-color: #00833b;
+    cursor: pointer;
+  }
+  .list-container_task-list li .flex-container_button-important:active {
+    background-color: #3bbe76;
+  }
+  .list-container_task-list li .flex-container_button-important:focus {
+    outline-color: #38B46C;
+  }
+  .list-container_task-list li .flex-container .not-important {
+    background-color: #C2C2C2;
+  }
+  .list-container_task-list li .flex-container .not-important:hover {
+    box-shadow: 0px 10px 20px rgba(198, 201, 202, 0.5);
+    background-color: #acaaaa;
+  }
+  .list-container_task-list li .flex-container .not-important:active {
+    background-color: #6e6d6d;
+  }
+  .list-container_task-list li .flex-container_button-delete {
+    display: none;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI2Ljk4NDQgMTEuOTg0NFYxNEgxMy4wMTU2VjExLjk4NDRIMTYuNDg0NEwxNy41MTU2IDExSDIyLjQ4NDRMMjMuNTE1NiAxMS45ODQ0SDI2Ljk4NDRaTTE0IDI2Ljk4NDRWMTQuOTg0NEgyNlYyNi45ODQ0QzI2IDI3LjUxNTYgMjUuNzk2OSAyNy45ODQ0IDI1LjM5MDYgMjguMzkwNkMyNC45ODQ0IDI4Ljc5NjkgMjQuNTE1NiAyOSAyMy45ODQ0IDI5SDE2LjAxNTZDMTUuNDg0NCAyOSAxNS4wMTU2IDI4Ljc5NjkgMTQuNjA5NCAyOC4zOTA2QzE0LjIwMzEgMjcuOTg0NCAxNCAyNy41MTU2IDE0IDI2Ljk4NDRaIiBmaWxsPSIjNjY2NjY2Ii8+CjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIiBmaWxsPSIjQzRDNEM0IiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K);
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    padding: 0;
+    border: 0px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .list-container_task-list li .flex-container_button-delete:hover {
+    box-shadow: 0px 10px 20px rgba(198, 201, 202, 0.5);
+    background-color: rgba(198, 201, 202, 0.5);
+    cursor: pointer;
+  }
+  .list-container_task-list li .flex-container_button-delete:active {
+    background-color: #ffffff;
+    outline: none;
+  }
+  .list-container_task-list li .flex-container_button-delete:focus {
+    outline-color: #38B46C;
+  }
+  
