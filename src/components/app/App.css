@@ -8,7 +8,7 @@ html {
     color: #53565A;
 }
 .background {
-    background: url(./../../images/design/taking_notes.svg) no-repeat;
+    background: url(./../../assets/images/design/taking_notes.svg) no-repeat;
     position: fixed;
     z-index: -1;
     top: 20%;

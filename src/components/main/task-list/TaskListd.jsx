@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import TaskItem from './item/TaskItem';
 import './TaskList.css';
-class TaskListDone extends Component {
+class TaskListd extends Component {
 
     render() {
         const task = this.props.task;
@@ -31,4 +31,4 @@ class TaskListDone extends Component {
         )
     }
 }
-export default TaskListDone;
+export default TaskListd;

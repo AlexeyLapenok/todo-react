@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './Header.css';
-import { ReactComponent as ReactIcon } from '../../images/content/Logo.svg';
+import { ReactComponent as ReactIcon } from '../../assets/images/content/Logo.svg';
 import Search from './search/Search';
 
 
