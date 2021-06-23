@@ -2,8 +2,8 @@ import { Component } from 'react';
 import AddTask from './add-task/AddTask';
 import Submenu from './submenu/Submenu';
 import TaskList from './task-list/TaskList';
-import TaskListActive from './task-list/TaskList';
-import TaskListDone from './task-list/TaskList';
+import TaskLista from './task-list/TaskList';
+import TaskListd from './task-list/TaskList';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 class Main extends Component {
@@ -29,7 +29,7 @@ class Main extends Component {
                     </Route>
 
                     <Route path='/active' >
-                        <TaskListActive
+                        <TaskLista
                             deleteTask={deleteTask}
                             handleDone={this.props.handleDone}
                             handleIsImportant={this.props.handleIsImportant}
@@ -40,7 +40,7 @@ class Main extends Component {
                     </Route>
 
                     <Route path='/done'>
-                        <TaskListDone
+                        <TaskListd
                             deleteTask={deleteTask}
                             handleDone={this.props.handleDone}
                             handleIsImportant={this.props.handleIsImportant}
