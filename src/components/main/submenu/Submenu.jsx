@@ -37,7 +37,7 @@ class Submenu extends Component {
             <section className="submenu-container">
                 <div className="submenu-container_submenu">
                     <NavLink
-                        to="/#/"
+                        to="/"
                         onClick={() => this.handleClassAll()}
                         className="submenu-container_submenu_all"
                         activeClassName={this.state.activeClassName}
@@ -45,14 +45,14 @@ class Submenu extends Component {
                     >All
                     </NavLink>
                     <NavLink
-                        to="/#/active"
+                        to="/active"
                         onClick={() => this.handleClass()}
                         className="submenu-container_submenu_active"
                         tabIndex="3"
                     >Active
                     </NavLink>
                     <NavLink
-                        to="/#/done"
+                        to="/done"
                         onClick={() => this.handleClass()}
                         className="submenu-container_submenu_done"
                         tabIndex="4"
