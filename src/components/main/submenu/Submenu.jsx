@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Submenu.css';
 class Submenu extends Component {
 
@@ -8,16 +9,15 @@ class Submenu extends Component {
         ))
     }
     render() {
-        const task = this.props.task;
-        const index = task.map(item => item.done);
-        console.log(index);
+        // const task = this.props.task;
+        // const index = task.map(item => item.done);
         return (
             <section className="submenu-container">
-                <ul className="submenu-container_submenu">
-                    <li className="submenu-container_submenu_all select" tabIndex="2">All</li>
-                    <li className="submenu-container_submenu_active" tabIndex="3">Active</li>
-                    <li onClick={() => this.handleSubDone()} className="submenu-container_submenu_done" tabIndex="4">Done</li>
-                </ul>
+                <div className="submenu-container_submenu">
+                    <NavLink to="/all" className="submenu-container_submenu_all" tabIndex="2">All</NavLink>
+                    <NavLink to="/active" className="submenu-container_submenu_active" tabIndex="3">Active</NavLink>
+                    <NavLink to="/done" className="submenu-container_submenu_done" tabIndex="4">Done</NavLink>
+                </div>
             </section>
         )
     }
