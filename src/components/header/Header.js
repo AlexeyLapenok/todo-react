@@ -3,7 +3,6 @@ import './Header.css';
 import { ReactComponent as ReactIcon } from '../../assets/images/content/Logo.svg';
 import Search from './search/Search';
 
-
 class Header extends Component {
 
     render() {
@@ -11,7 +10,7 @@ class Header extends Component {
         return (
             <header className="header">
                 <ReactIcon className="header_logo" alt="Logo SENLA" />
-                <Search filterList={this.props.filterList} />
+                <Search task={this.props.task} />
             </header>
         )
     }

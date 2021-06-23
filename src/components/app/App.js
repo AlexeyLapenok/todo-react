@@ -6,8 +6,8 @@ class App extends Component {
 
   state = {
     tasks: [
-      { id: 0, title: 'Read book', done: false, isImportant: false },
-      { id: 1, title: 'Learn React', done: true, isImportant: false }
+      { id: 0, title: 'Read book(EXAMPLE)', done: false, isImportant: true },
+      { id: 1, title: 'Learn React(EXAMPLE)', done: true, isImportant: false }
     ]
   };
 
@@ -47,14 +47,6 @@ class App extends Component {
     })
   };
 
-  filterList = (e) => {
-    this.setState({
-      tasks: this.state.tasks.filter(task => task.title.toLowerCase().search(e.target.value))
-    });
-    console.log(this.state.tasks);
-    // this.setState({ items: filteredList });
-  };
-
   componentDidMount() {
     const localStorageRef = localStorage.getItem('state');
     if (localStorageRef) {
@@ -73,14 +65,13 @@ class App extends Component {
         <h1 className="none">Task list</h1>
         <div className="background"></div>
         <div className="container">
-          <Header filterList={this.filterList} />
+          <Header task={tasks} filterList={this.filterList} />
           <Main
             deleteTask={this.deleteTask}
             addTask={this.addTask}
             handleDone={this.handleDone}
             handleIsImportant={this.handleIsImportant}
             task={tasks}
-            stateApp={this.state}
           />
         </div>
       </div>
