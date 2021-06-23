@@ -17,7 +17,7 @@ class Main extends Component {
                 <hr />
                 <Submenu task={task} />
                 <AddTask addTask={addTask} task={task} />
-                <Route exact path="/">
+                <Route exact path="/#/">
                     <TaskList
                         deleteTask={deleteTask}
                         handleDone={this.props.handleDone}
@@ -27,7 +27,7 @@ class Main extends Component {
                     />
                 </Route>
 
-                <Route exact path="/active" >
+                <Route exact path="/#/active" >
                     <TaskListActive
                         deleteTask={deleteTask}
                         handleDone={this.props.handleDone}
@@ -38,7 +38,7 @@ class Main extends Component {
 
                 </Route>
 
-                <Route exact path="/done">
+                <Route exact path="/#/done">
                     <TaskListDone
                         deleteTask={deleteTask}
                         handleDone={this.props.handleDone}
