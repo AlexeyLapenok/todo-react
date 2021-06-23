@@ -1,17 +1,17 @@
 import { Component } from 'react';
 import TaskItem from './item/TaskItem';
 import './TaskList.css';
-class TaskList extends Component {
+class TaskListActive extends Component {
 
     render() {
         const task = this.props.task;
-
+        console.log('dwd');
         return (
 
             <section className="list-container">
                 <ul className="list-container_task-list">
                     {
-                        task.map(item => (
+                        task.map(item => item.done === false ?
                             <TaskItem
                                 deleteTask={this.props.deleteTask}
                                 handleDone={this.props.handleDone}
@@ -22,8 +22,8 @@ class TaskList extends Component {
                                 title={item.title}
                                 done={item.done}
                                 isImportant={item.isImportant}
-                            />
-                        ))
+                            /> : ""
+                        )
                     }
                 </ul>
             </section>
@@ -31,4 +31,4 @@ class TaskList extends Component {
         )
     }
 }
-export default TaskList;
+export default TaskListActive;
