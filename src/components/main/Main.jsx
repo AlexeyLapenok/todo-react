@@ -2,8 +2,8 @@ import { Component } from 'react';
 import AddTask from './add-task/AddTask';
 import Submenu from './submenu/Submenu';
 import TaskList from './task-list/TaskList';
-import TaskLista from './task-list/TaskLista';
-import TaskListd from './task-list/TaskListd';
+import TaskListActive from './task-list/TaskListActive';
+import TaskListDone from './task-list/TaskListDone';
 import { Route } from 'react-router-dom';
 
 class Main extends Component {
@@ -26,18 +26,9 @@ class Main extends Component {
                         stateApp={this.props.stateApp}
                     />
                 </Route>
-                {/* <Route path="/all">
-                    <TaskList
-                        deleteTask={deleteTask}
-                        handleDone={this.props.handleDone}
-                        handleIsImportant={this.props.handleIsImportant}
-                        task={task}
-                        stateApp={this.props.stateApp}
-                    />
-                </Route> */}
 
-                <Route path="/active" >
-                    <TaskLista
+                <Route exact path="/active" >
+                    <TaskListActive
                         deleteTask={deleteTask}
                         handleDone={this.props.handleDone}
                         handleIsImportant={this.props.handleIsImportant}
@@ -47,8 +38,8 @@ class Main extends Component {
 
                 </Route>
 
-                <Route path="/done">
-                    <TaskListd
+                <Route exact path="/done">
+                    <TaskListDone
                         deleteTask={deleteTask}
                         handleDone={this.props.handleDone}
                         handleIsImportant={this.props.handleIsImportant}

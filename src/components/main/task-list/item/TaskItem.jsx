@@ -10,10 +10,21 @@ class TaskItem extends Component {
         const notImportant = this.props.isImportant ? "NOT " : "MARK ";
         return (
             <li className="">
-                <p onClick={() => this.props.handleDone(this.props.id)} className={classImportant + ' ' + classDone}>{this.props.title}</p>
+                <p
+                    onClick={() => this.props.handleDone(this.props.id)}
+                    className={classImportant + ' ' + classDone}>
+                    {this.props.title}
+                </p>
                 <div className="flex-container">
-                    <button className={btnImportant || classNone} onClick={() => this.props.handleIsImportant(this.props.id)}>{notImportant} IMPORTANT</button>
-                    <button className="flex-container_button-delete" onClick={() => this.props.deleteTask(this.props.id)}></button>
+                    <button
+                        className={btnImportant || classNone}
+                        onClick={() => this.props.handleIsImportant(this.props.id)}>
+                        {notImportant} IMPORTANT
+                    </button>
+                    <button
+                        className="flex-container_button-delete"
+                        onClick={() => this.props.deleteTask(this.props.id)}>
+                    </button>
                 </div>
             </li>
         )

@@ -44,7 +44,8 @@ class AddTask extends Component {
                     <button
                         onClick={() => this.addInput()}
                         className="add-container_task-form--add"
-                    >ADD</button>
+                    >ADD
+                    </button>
                 </form>
             </section>
         )
