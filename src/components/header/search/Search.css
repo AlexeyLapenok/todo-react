@@ -17,3 +17,43 @@
     padding-left: 35px;
     margin-left: 20px;
 }
+@media screen and (max-width: 767px) {
+    
+    .header_logo {
+      margin: 0 auto;
+      margin-bottom: 10px;
+      -webkit-animation-name: appearance-logo;
+              animation-name: appearance-logo;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s;
+    }
+    @-webkit-keyframes appearance-logo {
+      0% {
+        opacity: 0;
+        transform: translateX(-300px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+    @keyframes appearance-logo {
+      0% {
+        opacity: 0;
+        transform: translateX(-300px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+    .header_input {
+      min-width: 247px;
+      height: 25px;
+      font-size: 10px;
+    }
+    .header_input-icon {
+      margin-left: 0px;
+    }
+  
+    
+  }
+  

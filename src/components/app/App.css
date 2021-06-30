@@ -34,3 +34,35 @@ hr {
     background-color: #e2e2e2;
     margin-top: -17px;
 }
+@media screen and (max-width: 1023px) {
+    .page { 
+        margin: 0 auto;
+    }
+    .background {
+        top: 20%;
+        right: -35%;
+        background-size: 61%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .App {
+      max-width: 310px;
+    }
+  
+    .background {
+      right: auto;
+      background-size: 55%;
+    }
+  
+    .container {
+      min-width: 280px;
+      margin-top: 10px;
+      margin-right: 0;
+    }
+
+    hr {
+      display: none;
+    }
+  
+  }
+  
