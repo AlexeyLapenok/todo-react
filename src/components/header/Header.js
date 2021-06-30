@@ -10,7 +10,7 @@ class Header extends Component {
         return (
             <header className="header">
                 <ReactIcon className="header_logo" alt="Logo SENLA" />
-                <Search task={this.props.task} />
+                <Search task={this.props.task} searchItem={this.props.searchItem} />
             </header>
         )
     }

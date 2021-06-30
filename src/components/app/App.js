@@ -5,11 +5,14 @@ import Main from '../main/Main';
 class App extends Component {
 
   state = {
+    search: '',
     tasks: [
       { id: 0, title: 'Read book(EXAMPLE)', done: false, isImportant: true },
       { id: 1, title: 'Learn React(EXAMPLE)', done: true, isImportant: false }
     ]
   };
+
+
 
   addTask = task => {
     this.setState(state => {
@@ -58,6 +61,21 @@ class App extends Component {
     localStorage.setItem('state', JSON.stringify(this.state.tasks));
   }
 
+  searchItem = (search) => {
+    this.setState({ search });
+
+  };
+  searchChanged(items, search) {
+    if (search.length === 0) {
+      return items;
+    }
+
+    return items.filter((item) => {
+
+      return item.text.toLowerCase().indexOf(search.toLowerCase()) > -1;
+    });
+  }
+
   render() {
     const { tasks } = this.state;
     return (
@@ -65,7 +83,7 @@ class App extends Component {
         <h1 className="none">Task list</h1>
         <div className="background"></div>
         <div className="container">
-          <Header task={tasks} filterList={this.filterList} />
+          <Header task={tasks} searchItem={this.searchItem} />
           <Main
             deleteTask={this.deleteTask}
             addTask={this.addTask}
